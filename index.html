@@ -1,0 +1,318 @@
+<!-- CSS Stylesheets with Relative Paths -->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>The Star Wars Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+</head>
+<body>
+  <div class="container" id="main">
+    <div class="row">
+      <div class="col-12">
+        <p id="quizTitle">
+          The <img src="./assets/images/starWarsHead.png" id="starWarsImg"> Quiz
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1">
+      </div>
+      <div class="col-10">
+        <p id="instruct">
+          You will have 1 minute to answer 10 questions.
+          The questions will be multiple choice and your time will be recorded.
+          Good Luck!
+            <br>
+              <div id="show-time"></div>
+            <br>
+              <button type="button" class="btn btn-warning" id="startBtn">May The Force Be With You!</button>
+        </p>
+          <br>
+      </div>
+    </div>
+<!-- Questions -->
+    <div class="container"  id="allQuestions">
+<!-- Question 1 -->
+    <div class="row">
+      <div class="col-6">
+      <h5>Question 1: <em>"Who said "Its a trap!"</em></h5>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question1" id="q1a1" value="monMothma"> Mon Mothma
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question1" id="q1a2" value="ackbar"> Admiral Ackbar
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question1" id="q1a3" value="c3po"> C-3PO
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question1" id="q1a4" value="obiWan"> Obi-Wan Kenobi
+          </label>
+        </div>
+      </div>
+<!-- Question 2 -->
+      <div class="col-6">
+        <h5>Question 2: <em>Who voiced Yoda?</em></h5>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question2" id="q2a1" value="jimHenson"> Jim Henson
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question2" id="q2a2" value="frankOz"> Frank Oz
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question2" id="q2a3" value="timRose"> Tim Rose
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question2" id="q2a4" value="nickMoore"> Nick Moore
+            </label>
+          </div>
+      </div>
+    </div>
+     <br>
+<!-- Question 3 -->
+    <div class="row">
+      <div class="col-6">
+        <h5>Question 3: <em>What did George Lucas promise Samuel L. Jackson to get him into Star Wars?</em></h5>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question3" id="q3a1" value="nephewYoung"> Jackson's nephew could be a youngling
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question3" id="q3a2" value="curseWord"> He could have the only curse word in the series
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question3" id="q3a3" value="purpleLight"> He could have a purple lightsaber
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question3" id="q3a4" value="actionFigure"> He could make his own action figure
+            </label>
+          </div>
+      </div>
+<!-- Question 4 -->
+      <div class="col-6">
+        <h5>Question 4: <em>What fatal flaw did the rebels exploit to destroy the first Death Star?</em></h5>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question4" id="q4a1" value="reactorCore"> An unstable reactor core
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question4" id="q4a2" value="bigHole"> It was only half built there was a big hole in it
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question4" id="q4a3" value="structuralSupport"> Incomplete structural supports
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question4" id="q4a4" value="exhaustPort"> An exposed thermal exhaust port
+            </label>
+          </div>
+      </div>
+    </div>
+      <br>
+<!-- Question 5 -->
+    <div class="row">
+      <div class="col-6">
+        <h5>Question 5: <em>How old was Padme Amidala When she became Queen of Naboo?</em></h5>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question5" id="q5a1" value="9"> 9 years old
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question5" id="q5a2" value="26"> 26 years old
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question5" id="q5a3" value="14"> 14 years old
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question5" id="q5a4" value="21"> 21 years old
+            </label>
+          </div>
+      </div>
+<!-- Question 6 -->
+      <div class="col-6">
+        <h5>Question 6: <em>What line did Luke, Han, C-3PO, Obi-Wan, and Leia all say?</em></h5>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question6" id="q6a1" value="aTrap"> Its a trap
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question6" id="q6a2" value="wookieeWin"> Let the Wookiee win
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question6" id="q6a3" value="rescueYou"> I'm here to rescue you
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question6" id="q6a4" value="badFeeling"> I have a bad feeling about this
+            </label>
+          </div>
+      </div>
+    </div>
+      <br>
+<!-- Question 7 -->
+      <div class="row">
+        <div class="col-6">
+          <h5>Question 7: <em>Who was inside R2-D2?</em></h5>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="question7" id="q7a1" value="mikeWinslow"> Michael Winslow
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="question7" id="q7a2" value="warkwick"> Warwick Davis
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="question7" id="q7a3" value="kennyBaker"> Kenny Baker
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="question7" id="q7a4" value="deepRoy"> Deep Roy
+              </label>
+            </div>
+          </div>
+<!-- Question 8 -->
+          <div class="col-6">
+            <h5>Question 8: <em>Who killed Jango Fett?</em></h5>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="question8" id="q8a1" value="8obiWan"> Obi-Wan Kenobi
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="question8" id="q8a2" value="anikin"> Anikin Skywalker
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="question8" id="q8a3" value="maceWindu"> Mace Windu
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="question8" id="q8a4" value="bobaFett"> Boba Fett
+                </label>
+              </div>
+          </div>
+        </div>
+          <br>
+<!-- Question 9 -->
+        <div class="row">
+          <div class="col-6">
+            <h5>Question 9: <em>What sound effect can be heard in EVERY Star Wars movie?</em></h5>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="question9" id="q9a1" value="tarzanCall"> Tarzan Call
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="question9" id="q9a2" value="wilhelm"> Wilhelm Scream
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="question9" id="q9a3" value="pewPew"> Pew Pew
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="question9" id="q9a4" value="catMeow"> Cat Meow
+                </label>
+              </div>
+            </div>
+<!-- Question 10 -->
+            <div class="col-6">
+              <h5>Question 10: <em>What actor wasnt sure if they wanted to be in Return of the Jedi?</em></h5>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="question10" id="q10a1" value="carrieFisher"> Carrie Fisher
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="question10" id="q10a2" value="markHamill"> Mark Hamill
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="question10" id="q10a3" value="harrisonFord"> Harrison Ford
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="question10" id="q10a4" value="jamesJones"> James Earl Jones
+                  </label>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="./assets/javascript/game.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+</html>
