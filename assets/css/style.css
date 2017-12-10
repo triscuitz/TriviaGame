@@ -22,3 +22,12 @@ body {
 #allQuestions {
   display: none;
 }
+#doneScreen {
+  display: none;
+}
+#show-time {
+  color: red;
+}
+.results {
+  color: green;
+}
